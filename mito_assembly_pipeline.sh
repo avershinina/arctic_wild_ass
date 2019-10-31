@@ -60,7 +60,7 @@ gzip -dc seqprep_output/${SAMPLE}_merged.fastq.gz | perl ${PRINSEQ}/prinseq-lite
 ${BBMAP}/reformat.sh in1=seqprep_output/${SAMPLE}_R1_unmerged.fastq.gz in2=seqprep_output/${SAMPLE}_R2_unmerged.fastq.gz out=seqprep_output/${SAMPLE}_unmerged_combined.fastq.gz
 
 echo '---------------------------'
-echo 'Seqprep and bbmap has finished running'
+echo 'Seqprep and bbmap have finished running'
 echo '---------------------------'
 
 gzip -dc seqprep_output/${SAMPLE}_unmerged_combined.fastq.gz | perl ${PRINSEQ}/prinseq-lite.pl -fastq stdin -out_good seqprep_output/${SAMPLE}_unmerged_combined.complexity_filtered -out_bad null -lc_method ${COMPLEXITY_METHOD} -lc_threshold ${COMPLEXITY_THRESHOLD} -line_width 0
@@ -76,7 +76,7 @@ gzip -dc seqprep_output/${SAMPLE}_all_trimmed.complexity_filtered.fastq.gz | ${F
 perl ${PRINSEQ}/prinseq-lite.pl -fasta seqprep_output/${SAMPLE}_all_trimmed.complexity_filtered.fasta -out_good seqprep_output/${SAMPLE}_all_trimmed.complexity_filtered.dedup -out_bad null -derep 124 -line_width 0
 
 echo '---------------------------'
-echo "Prinseq and fastx has finished running"
+echo "Prinseq and fastx have finished running"
 echo 'Starting mito assembly'
 echo '---------------------------'
 
