@@ -1,5 +1,5 @@
 # README
-This repo complements the paper by Vershinina et al 201X "The case of an arctic wild ass highlights the utility of ancient DNA for validating problematic identifications in museum collections", considered for review at Molecular Ecology Resources.
+This repo complements the paper by Vershinina et al 201X "The case of an arctic wild ass highlights the utility of ancient DNA for validating problematic identifications in museum collections", currently under review at Molecular Ecology Resources.
 
 ## Reference-guided aseembly of ancient mitochondrial genome
 This script is a pipeline that utilizes a set of bioinformatic tools to process anicent DNA sequencing data with the aim of assembling a complete mitochondrial genome using a reference. This script works only for paired end Illumina data.
